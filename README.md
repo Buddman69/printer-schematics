@@ -33,6 +33,7 @@ Every fact in a revision README carries one of these:
 |---|---|
 | **[verified]** | Checked on a real machine: live config, measurement, or continuity test. Says how and when |
 | **[vendor]** | From a vendor document. Correct for the revision the document names, possibly not for others |
+| **[vendor-config]** | From the vendor's own firmware config. Shows which MCU pins are used, not which connector they reach |
 | **[inferred]** | Reasoned from photos, part markings, or conventions. Plausible, not checked |
 
 When sources disagree, the README says so and names which one wins.
@@ -41,4 +42,5 @@ When sources disagree, the README says so and names which one wins.
 
 | Brand | Model | Part | Board | Revisions |
 |---|---|---|---|---|
+| Creality | K2 / K2 Pro / K2 Plus | Toolhead | [CR1FN200338](Creality/K2-Series/Toolhead/CR1FN200338/) | C15 (config pin map), C16 (photos) |
 | QIDI | Max4 | Toolhead | [A-9(GD)](QIDI/Max4/Toolhead/A-9-GD/) | V1.2 (vendor pinout), V1.5 (photo + verified pins) |
